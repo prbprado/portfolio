@@ -1,0 +1,416 @@
+:root {
+  --bg-dark: #103542;
+  --bg-beige: #F4EFEA;
+  --bg-light: #FFFFFF;
+  --coral: #FF5555;
+  --blue-badge: #006dff;
+  --text-dark: #142B35;
+  --text-muted: #52616B;
+  --font-serif: 'Newsreader', serif;
+  --font-sans: 'Encode Sans Condensed', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--text-dark);
+  background-color: var(--bg-light);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.text-coral { color: var(--coral); }
+.text-dark { color: var(--text-dark); }
+.text-white { color: #FFFFFF; }
+
+.eyebrow {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #FFFFFF;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--font-sans);
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: var(--text-dark);
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: var(--coral);
+}
+
+/* HERO SECTION COM CORTE INCLINADO */
+.hero {
+  background-color: var(--bg-dark);
+  color: #FFFFFF;
+  padding: 80px 0 130px;
+  clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+}
+
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 5px 12px;
+  border-radius: 999px;
+  color: #FFFFFF;
+}
+
+.badge-coral { background-color: var(--coral); }
+.badge-blue { background-color: var(--blue-badge); }
+
+.hero-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.1rem, 4.5vw, 3.6rem);
+  font-weight: 700;
+  line-height: 1.18;
+  max-width: 860px;
+  margin-bottom: 40px;
+}
+
+.hero-profile {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  max-width: 560px;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: var(--coral);
+  flex-shrink: 0;
+}
+
+.profile-info strong {
+  display: block;
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.profile-info p {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.45;
+}
+
+.hero-action {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 36px;
+}
+
+.scroll-link {
+  color: #006dff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* ALGUNS NÚMEROS */
+.metrics-section {
+  background-color: var(--bg-beige);
+  margin-top: -65px;
+  padding: 130px 0 90px;
+}
+
+.split-header {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-bottom: 56px;
+}
+
+.section-heading {
+  font-family: var(--font-serif);
+  font-size: clamp(1.75rem, 3.2vw, 2.5rem);
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px 24px;
+}
+
+.metric-number {
+  display: block;
+  font-size: clamp(2.2rem, 3.5vw, 2.8rem);
+  font-weight: 700;
+  color: var(--coral);
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+
+.metric-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--text-dark);
+}
+
+/* FAIXA DE FOTOS */
+.photo-strip {
+  width: 100%;
+  background-color: #111;
+  line-height: 0;
+}
+
+.photo-strip img {
+  width: 100%;
+  max-height: 360px;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+/* TREINAMENTOS (CORAL INCLINADO) */
+.training-section {
+  background-color: var(--coral);
+  padding: 80px 0 110px;
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+}
+
+.training-desc {
+  color: rgba(255, 255, 255, 0.94);
+  margin-top: 20px;
+  font-size: 1rem;
+  max-width: 680px;
+}
+
+/* COMO TRABALHO */
+.process-section {
+  padding: 90px 0 100px;
+  background-color: var(--bg-light);
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.step-num {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--coral);
+  margin-bottom: 12px;
+}
+
+.process-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--text-dark);
+}
+
+.process-card p {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+}
+
+/* CASES DE MERCADO */
+.cases-section {
+  background-color: var(--bg-beige);
+  padding: 90px 0 110px;
+}
+
+.case-card {
+  border-radius: 16px;
+  padding: 36px 28px;
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  align-items: center;
+  overflow: hidden;
+}
+
+.case-dark {
+  background-color: var(--bg-dark);
+  color: #FFFFFF;
+  font-weight: 400;
+}
+
+.case-light {
+  background-color: #FFFFFF;
+  color: var(--text-dark);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.case-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.tag {
+  background-color: var(--coral);
+  color: #FFFFFF;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.case-content h3 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  margin-bottom: 14px;
+}
+
+.case-content p {
+  font-size: 0.95rem;
+  margin-bottom: 24px;
+  opacity: 0.9;
+}
+
+.case-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #2B8AC6;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.case-image img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+/* FOOTER */
+.footer {
+  background-color: var(--bg-dark);
+  color: #FFFFFF;
+  padding: 90px 0;
+}
+
+.footer-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 3.8vw, 2.8rem);
+  line-height: 1.2;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer-links a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: var(--coral);
+}
+
+/* RESPONSIVIDADE DESKTOP */
+@media (min-width: 768px) {
+  .split-header {
+    grid-template-columns: 240px 1fr;
+    align-items: baseline;
+  }
+
+  .metrics-grid {
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: 256px;
+  }
+
+  .process-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+
+  .case-card {
+    grid-template-columns: 1fr 1.15fr;
+    padding: 52px;
+  }
+
+  .footer-grid {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .footer-links {
+    text-align: right;
+  }
+}
