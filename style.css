@@ -530,14 +530,6 @@ body {
   align-items: center;
 }
 
-.pdf-hero h1 {
-  font-family: var(--font-serif);
-  font-size: clamp(3.1rem, 7vw, 6.5rem);
-  line-height: 0.95;
-  max-width: 760px;
-  margin-bottom: 24px;
-}
-
 .pdf-hero p {
   max-width: 620px;
   font-size: 1.15rem;
