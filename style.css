@@ -289,7 +289,6 @@ body {
   grid-template-columns: 1fr;
   gap: 32px;
   align-items: center;
-  overflow: hidden;
 }
 
 .case-dark {
@@ -403,8 +402,17 @@ body {
   }
 
   .case-card {
-    grid-template-columns: 1fr 1.15fr;
+    grid-template-columns: 0.85fr 1.35fr;
     padding: 52px;
+  }
+
+  .case-image {
+    position: relative;
+  }
+
+  .case-image img {
+    width: calc(100% + 48px);
+    max-width: none;
   }
 
   .footer-grid {
