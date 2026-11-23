@@ -384,6 +384,137 @@ body {
   color: var(--coral);
 }
 
+/* PÁGINA DE CASE */
+.case-hero {
+  background-color: var(--bg-dark);
+  color: #FFFFFF;
+  padding: 54px 0 110px;
+  clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+}
+
+.case-back {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.82);
+  text-decoration: none;
+  margin-bottom: 52px;
+}
+
+.case-back:hover {
+  color: #FFFFFF;
+}
+
+.case-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  align-items: end;
+}
+
+.case-hero h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(3.2rem, 8vw, 6.8rem);
+  line-height: 0.95;
+  margin-bottom: 24px;
+}
+
+.case-lead {
+  max-width: 620px;
+  font-size: clamp(1.25rem, 2.5vw, 1.8rem);
+  line-height: 1.35;
+}
+
+.case-facts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.case-facts div {
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  padding-top: 12px;
+}
+
+.case-facts dt {
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.case-facts dd {
+  font-size: 0.95rem;
+}
+
+.case-introduction {
+  background-color: var(--bg-beige);
+  padding: 110px 0;
+}
+
+.case-introduction-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.case-introduction-grid p,
+.case-conclusion-grid p {
+  max-width: 760px;
+  margin-top: 24px;
+  font-size: 1.2rem;
+}
+
+.case-feature {
+  background-color: var(--bg-light);
+  padding: 90px 0;
+}
+
+.case-feature img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+.case-approach {
+  background-color: var(--bg-beige);
+  padding: 90px 0 110px;
+}
+
+.case-steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.case-steps article {
+  border-top: 1px solid rgba(20, 43, 53, 0.18);
+  padding-top: 18px;
+}
+
+.case-steps h3 {
+  font-size: 1.25rem;
+  margin: 8px 0 12px;
+}
+
+.case-steps p {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+.case-conclusion {
+  background-color: var(--coral);
+  padding: 90px 0;
+}
+
+.case-conclusion-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+.case-conclusion-grid p {
+  color: rgba(255, 255, 255, 0.94);
+}
+
 /* RESPONSIVIDADE DESKTOP */
 @media (min-width: 768px) {
   .split-header {
@@ -413,6 +544,23 @@ body {
   .case-image img {
     width: calc(100% + 48px);
     max-width: none;
+  }
+
+  .case-hero-grid {
+    grid-template-columns: 1fr 300px;
+  }
+
+  .case-introduction-grid {
+    grid-template-columns: 240px 1fr;
+  }
+
+  .case-steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .case-conclusion-grid {
+    grid-template-columns: 1fr 0.8fr;
+    align-items: end;
   }
 
   .footer-grid {
