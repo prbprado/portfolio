@@ -781,6 +781,100 @@ body.pdf-case-body .pdf-feature img[src$="agendamento.png"] {
   opacity: 0.92;
 }
 
+.desbravador-context-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(20, 43, 53, 0.18);
+}
+
+.desbravador-context-stats div {
+  display: grid;
+  gap: 2px;
+}
+
+.desbravador-context-stats strong {
+  color: var(--coral);
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.desbravador-context-stats span {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.desbravador-data-note {
+  color: var(--text-muted);
+  font-size: 0.85rem !important;
+}
+
+.desbravador-research-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 48px;
+}
+
+.desbravador-problems,
+.desbravador-solution {
+  background-color: var(--bg-beige);
+}
+
+.desbravador-problems {
+  padding: 90px 0;
+}
+
+.desbravador-problem-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px 24px;
+  margin-top: 28px;
+}
+
+.desbravador-problem-grid article {
+  border-top: 1px solid rgba(20, 43, 53, 0.2);
+  padding-top: 14px;
+}
+
+.desbravador-problem-grid article > span {
+  color: var(--coral);
+  font-weight: 700;
+}
+
+.desbravador-problem-grid p {
+  margin-top: 10px;
+  font-size: 1.15rem;
+}
+
+.desbravador-turning-point h2 {
+  color: var(--coral);
+}
+
+.desbravador-solution-intro {
+  margin-bottom: 48px;
+}
+
+.desbravador-results {
+  background-color: var(--bg-dark);
+  color: #FFFFFF;
+}
+
+.desbravador-learning ul {
+  display: grid;
+  gap: 10px;
+  margin-top: 24px;
+  padding-left: 20px;
+}
+
+.desbravador-contact {
+  margin-top: 32px;
+  font-weight: 700;
+}
+
 /* RESPONSIVIDADE DESKTOP */
 @media (min-width: 768px) {
   .split-header {
@@ -827,6 +921,10 @@ body.pdf-case-body .pdf-feature img[src$="agendamento.png"] {
   .case-conclusion-grid {
     grid-template-columns: 1fr 0.8fr;
     align-items: end;
+  }
+
+  .desbravador-problem-grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .pdf-hero-grid {
