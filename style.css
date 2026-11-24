@@ -875,6 +875,77 @@ body.pdf-case-body .pdf-feature img[src$="agendamento.png"] {
   font-weight: 700;
 }
 
+.agileflex-meta {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.agileflex-research-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 48px;
+}
+
+.agileflex-problems,
+.agileflex-solution {
+  background-color: var(--bg-beige);
+}
+
+.agileflex-problems {
+  padding: 90px 0;
+}
+
+.agileflex-problem-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px 24px;
+  margin-top: 28px;
+}
+
+.agileflex-problem-grid article {
+  border-top: 1px solid rgba(20, 43, 53, 0.2);
+  padding-top: 14px;
+}
+
+.agileflex-problem-grid article > span {
+  color: var(--coral);
+  font-weight: 700;
+}
+
+.agileflex-problem-grid h3 {
+  font-size: 1.15rem;
+  margin-top: 10px;
+}
+
+.agileflex-problem-grid p {
+  margin-top: 8px;
+}
+
+.agileflex-turning-point h2 {
+  color: var(--coral);
+}
+
+.agileflex-solution-intro {
+  margin-bottom: 48px;
+}
+
+.agileflex-results {
+  background-color: var(--bg-dark);
+  color: #FFFFFF;
+}
+
+.agileflex-learning ul {
+  display: grid;
+  gap: 10px;
+  margin-top: 24px;
+  padding-left: 20px;
+}
+
+.agileflex-closing {
+  margin-top: 32px;
+  font-weight: 700;
+}
+
 /* RESPONSIVIDADE DESKTOP */
 @media (min-width: 768px) {
   .split-header {
@@ -925,6 +996,14 @@ body.pdf-case-body .pdf-feature img[src$="agendamento.png"] {
 
   .desbravador-problem-grid {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .agileflex-meta {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .agileflex-problem-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .pdf-hero-grid {
