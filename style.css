@@ -608,6 +608,17 @@ body {
   background-color: var(--bg-light);
 }
 
+.pdf-sprint {
+  padding: 100px 0;
+}
+
+.pdf-sprint-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 48px;
+}
+
 .pdf-context {
   background-color: #F4F1EB;
   padding: 160px 0 90px;
