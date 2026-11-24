@@ -582,7 +582,7 @@ body {
 
 .pdf-context {
   background-color: #F4F1EB;
-  padding: 130px 0 90px;
+  padding: 130px 0 90px;}
 .pdf-context-grid,
 .pdf-sprint-grid,
 .pdf-ideation-grid,
@@ -622,15 +622,20 @@ body {
   max-width: 760px;
 }
 
-.pdf-sprint {
-  background-color: var(--bg-beige);
-  padding: 80px 0;
+.pdf-context-direction {
+  margin-top: 34px;
 }
 
-.pdf-discovery {
-  padding: 110px 0;
+.pdf-context-direction h3 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.45rem, 2.5vw, 2.1rem);
+  line-height: 1.15;
+  margin-bottom: 8px;
 }
 
+.pdf-context-direction p {
+  margin-top: 0;
+}
 .pdf-section-title {
   max-width: 780px;
   margin-bottom: 36px;
