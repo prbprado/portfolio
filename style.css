@@ -519,10 +519,8 @@ body {
 .pdf-hero {
   background-color: var(--bg-dark);
   color: #FFFFFF;
-  padding: 48px 0 110px;
-  clip-path: polygon(0 0, 100% 0, 100% 94%, 0 100%);
-}
-
+  margin-top: -72px;
+  padding: 120px 0 110px;
 .pdf-hero-grid {
   display: grid;
   grid-template-columns: 1fr;
