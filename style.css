@@ -650,9 +650,13 @@ body {
 .pdf-context-direction p {
   margin-top: 0;
 }
-.pdf-section-title {
+ .pdf-section-title {
   max-width: 780px;
   margin-bottom: 36px;
+}
+
+.pdf-discovery {
+  padding-top: 130px;
 }
 
 .pdf-discovery-images {
