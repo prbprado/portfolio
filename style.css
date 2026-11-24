@@ -596,7 +596,8 @@ body {
 
 .pdf-context {
   background-color: #F4F1EB;
-  padding: 130px 0 90px;}
+  padding: 160px 0 90px;
+  margin-top: -65px;}
 .pdf-context-grid,
 .pdf-sprint-grid,
 .pdf-ideation-grid,
@@ -724,7 +725,7 @@ body {
 }
 
 .pdf-feature img {
-  width: 100%;
+  width: 80%;
   display: block;
   border-radius: 8px;
   box-shadow: 0 14px 36px rgba(20, 43, 53, 0.12);
