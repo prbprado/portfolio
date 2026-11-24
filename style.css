@@ -745,6 +745,12 @@ body {
   box-shadow: 0 14px 36px rgba(20, 43, 53, 0.12);
 }
 
+body.pdf-case-body .pdf-feature img[src$="odds.png"],
+body.pdf-case-body .pdf-feature img[src$="agendamento.png"] {
+  border-radius: 0;
+  box-shadow: none;
+}
+
 .pdf-results {
   background-color: var(--bg-beige);
   padding: 90px 0;
