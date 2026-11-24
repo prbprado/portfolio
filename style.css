@@ -516,6 +516,20 @@ body {
 }
 
 /* PDF CASE LAYOUT */
+.pdf-case-body .navbar {
+  background-color: var(--bg-dark);
+  border-bottom: 0;
+}
+
+.pdf-case-body .navbar .logo,
+.pdf-case-body .navbar .nav-links a {
+  color: #FFFFFF;
+}
+
+.pdf-case-body .navbar .nav-links a:hover {
+  color: var(--coral);
+}
+
 .pdf-hero {
   background-color: var(--bg-dark);
   color: #FFFFFF;
