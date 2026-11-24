@@ -660,17 +660,23 @@ body {
 }
 
 .pdf-discovery-images {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
+  position: relative;
+  left: 50%;
+  width: 100vw;
+  max-width: none;
   margin-top: 48px;
+  margin-left: 0;
+  transform: translateX(-50%);
 }
 
 .pdf-discovery-images img {
-  width: 100%;
+  display: block;
+  width: 100vw;
+  max-width: none;
   height: 260px;
   object-fit: cover;
-  border-radius: 8px;
+  object-position: center;
+  border-radius: 0;
 }
 
 .pdf-ideation {
@@ -812,7 +818,7 @@ body {
   }
 
   .pdf-discovery-images img {
-    width: 100%;
+    width: 100vw;
     height: 190px;
     object-fit: cover;
     object-position: center;
