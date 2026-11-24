@@ -577,6 +577,20 @@ body {
   width: 100%;
 }
 
+.pdf-image-placeholder {
+  width: 80%;
+  aspect-ratio: 16 / 9;
+  background-color: rgba(20, 43, 53, 0.04);
+  border: 1px dashed rgba(20, 43, 53, 0.28);
+  border-radius: 8px;
+}
+
+.pdf-image-placeholder-hero {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
 .pdf-hero-image img {
   width: 100%;
   max-height: 620px;
