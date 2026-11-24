@@ -108,11 +108,10 @@ body {
 }
 
 .badge {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   font-weight: 400;
   letter-spacing: 0.04em;
-  padding: 5px 12px;
-  border-radius: 999px;
+  padding: 3px 8px;
   color: #FFFFFF;
 }
 
