@@ -582,8 +582,7 @@ body {
 
 .pdf-context {
   background-color: #F4F1EB;
-}
-
+  padding: 130px 0 90px;
 .pdf-context-grid,
 .pdf-sprint-grid,
 .pdf-ideation-grid,
@@ -594,7 +593,13 @@ body {
   gap: 24px;
 }
 
-.pdf-context h2,
+.pdf-context h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.75rem, 3.2vw, 2.5rem);
+  line-height: 1.25;
+  font-weight: 700;
+}
+
 .pdf-sprint h2,
 .pdf-ideation h2,
 .pdf-results h2,
@@ -771,7 +776,11 @@ body {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .pdf-context-grid,
+  .pdf-context-grid {
+    grid-template-columns: 240px 1fr;
+    align-items: baseline;
+  }
+
   .pdf-sprint-grid,
   .pdf-ideation-grid,
   .pdf-results-grid,
