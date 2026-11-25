@@ -124,7 +124,7 @@ body {
   font-size: clamp(2.1rem, 4.5vw, 3.6rem);
   font-weight: 700;
   line-height: 1.18;
-  max-width: 860px;
+  max-width: 100%;
   margin-bottom: 40px;
 }
 
@@ -132,7 +132,13 @@ body {
   display: flex;
   align-items: center;
   gap: 18px;
-  max-width: 560px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.profile-info {
+  flex: 1;
+  min-width: 0;
 }
 
 .avatar {
