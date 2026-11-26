@@ -67,11 +67,15 @@ body {
 }
 
 .logo {
-  font-family: var(--font-sans);
-  font-weight: 600;
-  font-size: 1.25rem;
-  color: var(--text-dark);
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo img {
+  display: block;
+  width: auto;
+  height: clamp(23px, 1.5vw, 28px);
 }
 
 .nav-links {
