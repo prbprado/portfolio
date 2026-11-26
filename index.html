@@ -9,42 +9,45 @@
   <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="home-page">
 
   <!-- NAVBAR -->
   <header class="navbar">
     <div class="container nav-container">
       <a href="#" class="logo">PP.</a>
       <nav class="nav-links">
-        <a href="#sobre">SOBRE</a>
-        <a href="#cases">CASES</a>
-        <a href="mailto:prbprado@gmail.com" class="nav-cta">VAMOS CONVERSAR <span>↗</span></a>
+        <a href="#cases">Cases</a>
+        <a href="#sobre">Sobre</a>
+        <a href="mailto:prbprado@gmail.com" class="nav-cta">Vamos conversar <span>↗</span></a>
       </nav>
     </div>
   </header>
 
   <!-- HERO SECTION -->
   <section class="hero">
-    <div class="container">
-      <div class="hero-badges">
-        <span class="badge badge-coral">DOCENTE & PESQUISADORA</span>
-        <span class="badge badge-blue">UX & PRODUCT STRATEGIST</span>
+    <div class="container hero-layout">
+      <div class="hero-portrait">
+        <img src="assets/pdfs/avatar.png" alt="Patricia Prado em um workshop" />
       </div>
-
-      <h1 class="hero-title">
-        “Conecto <span class="text-coral">Design, Ciências cognitivas e Estratégia</span> para formar profissionais e transformar serviços complexos”
-      </h1>
-
-      <div class="hero-profile">
-        <img src="assets/avatar.png" alt="Patricia Prado" class="avatar" />
-        <div class="profile-info">
-          <strong>Olá, Sou Patricia Prado</strong>
-          <p>Doutoranda em Psicolinguística Experimental (UFSC), Mestre em Design (UDESC) e Cofundadora da Ideativo Design. Atuo na investigação sobre multimodalidade e IA, e na capacitação de equipes corporativas e governamentais.</p>
+      <div class="hero-copy">
+        <div class="hero-badges">
+          <span class="badge badge-blue">UX & PRODUCT STRATEGIST</span>
+          <span class="badge badge-coral">FACILITADORA & PESQUISADORA</span>
         </div>
-      </div>
 
-      <div class="hero-action">
-        <a href="#cases" class="scroll-link">Conheça meu trabalho <span>↓</span></a>
+        <h1 class="hero-title">
+          “Conecto <span class="text-coral">Design, Ciências cognitivas e Estratégia</span> para formar profissionais e transformar serviços complexos”
+        </h1>
+
+        <div class="profile-info">
+          <strong>Olá, sou Patricia Prado</strong>
+          <p>Atuo com design estratégico há mais de 20 anos. Tenho atuação em gestão de UX e consultoria para diversos setores de mercado, sou doutoranda em Psicolinguística Experimental (UFSC) e cofundadora da Ideativo Design. Conecto a docência no ensino superior (graduação e pós-graduação) à prática de projeto, facilitação de treinamentos e estratégia para organizações públicas e privadas.</p>
+          <ul class="languages" aria-label="Idiomas">
+            <li><span aria-hidden="true">🇧🇷</span> Nativo</li>
+            <li><span aria-hidden="true">🇪🇸</span> B2</li>
+            <li><span aria-hidden="true">🇺🇸</span> B2</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -61,10 +64,6 @@
 
       <div class="metrics-grid">
         <div class="metric-item">
-          <span class="metric-number">+20</span>
-          <span class="metric-label">ANOS DE EXPERIÊNCIA</span>
-        </div>
-        <div class="metric-item">
           <span class="metric-number">+60</span>
           <span class="metric-label">PROJETOS ENTREGUES</span>
         </div>
@@ -80,12 +79,17 @@
     </div>
   </section>
 
-  <!-- FAIXA DE FOTOS (TREINAMENTOS / WORKSHOPS) -->
-  <section class="photo-strip">
-    <img src="assets/fotos-treinamento.png" alt="Workshops e treinamentos conduzidos por Patricia Prado" />
+  <section class="client-strip" aria-label="Organizações com as quais Patricia trabalhou">
+    <div class="container client-logos">
+      <span class="client-logo client-unicef">unicef<span aria-hidden="true">◉</span></span>
+      <span class="client-logo client-siemens">SIEMENS<small>Healthineers</small></span>
+      <span class="client-logo client-intelipost"><small>grupo</small>intelipost.</span>
+      <span class="client-logo client-softplan">softplan</span>
+      <span class="client-logo client-sao-paulo">Secretaria da Saúde<br /><strong>SÃO PAULO</strong></span>
+    </div>
   </section>
 
-  <!-- TREINAMENTOS (SEÇÃO CORAL INCLINADA) -->
+  <!-- TREINAMENTOS -->
   <section class="training-section">
     <div class="container">
       <div class="split-header">
@@ -99,13 +103,19 @@
           </p>
         </div>
       </div>
+    </div>
   </section>
 
-  <!-- COMO TRABALHO -->
+  <!-- FAIXA DE FOTOS (TREINAMENTOS / WORKSHOPS) -->
+  <section class="photo-strip">
+    <img src="assets/fotos-treinamento.png" alt="Workshops e treinamentos conduzidos por Patricia Prado" />
+  </section>
+
+  <!-- ATUAÇÃO -->
   <section class="process-section">
     <div class="container">
       <div class="split-header">
-        <span class="eyebrow text-coral">COMO TRABALHO</span>
+        <span class="eyebrow text-coral">ATUAÇÃO</span>
         <h2 class="section-heading">
           Design que equilibra contexto, clareza e intencionalidade.
         </h2>
@@ -114,25 +124,25 @@
       <div class="process-grid">
         <div class="process-card">
           <span class="step-num">01</span>
-          <h3>Entender o problema antes de desenhar</h3>
+          <h3>Docência e Investigação Aplicada</h3>
           <p>
-            Investigo o contexto, as necessidades das pessoas, os comportamentos e as restrições do negócio e da tecnologia. A partir disso, ajudo a definir qual problema vale a pena resolver.
+            Atuação em graduação, pós-graduação e MBA (SENAI, UNIVALI) com foco em metodologias criativas e inovadoras. Investigação acadêmica na UFSC voltada à Psicolinguística Experimental, ergonomia cognitiva e interação humano-IA.
           </p>
         </div>
 
         <div class="process-card">
           <span class="step-num">02</span>
-          <h3>Definir o caminho com equilíbrio</h3>
+          <h3>Capacitação Corporativa e Setor Público</h3>
           <p>
-            Conecto evidências, objetivos e oportunidades para propor soluções que façam sentido para o negócio, sejam viáveis para a tecnologia e funcionem para as pessoas. Junto com as equipes, transformo essas escolhas em prioridades e direcionamentos claros.
+            Desenho e facilitação de workshops, trilhas de aprendizagem e treinamentos executivos em UX Research, Service Design e automação inteligente de processos para equipes públicas e privadas.
           </p>
         </div>
 
         <div class="process-card">
           <span class="step-num">03</span>
-          <h3>Entregar, medir e evoluir</h3>
+          <h3>Consultoria Estratégica de Alto Valor</h3>
           <p>
-            Faço o handoff para desenvolvimento com contexto e critérios bem definidos. Depois da entrega, acompanho os resultados e o feedback para entender o que funcionou, ajustar a estratégia e orientar os próximos passos.
+            Diagnóstico e arquitetura de soluções sistêmicas para problemas complexos, apoiando lideranças na tomada de decisão, definição de produtos e transformação de serviços. Atuando desde a ideação até o handoff.
           </p>
         </div>
       </div>

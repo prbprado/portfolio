@@ -1065,3 +1065,461 @@ body.pdf-case-body .pdf-feature img[src$="agendamento.png"] {
     text-align: right;
   }
 }
+
+/* HOME PAGE */
+.home-page .container {
+  max-width: 1620px;
+  width: calc(100% - 15.625vw);
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.home-page .navbar {
+  height: clamp(72px, 6.56vw, 126px);
+}
+
+.home-page .logo {
+  font-size: 1.1rem;
+}
+
+.home-page .nav-links {
+  gap: 32px;
+}
+
+.home-page .nav-links a {
+  font-size: 0.9rem;
+  text-transform: none;
+}
+
+.home-page .nav-links .nav-cta {
+  color: var(--text-dark);
+}
+
+.home-page .hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 0 0 48px;
+  color: var(--text-dark);
+  background-color: var(--bg-beige);
+  clip-path: none;
+}
+
+.home-page .hero::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0 0 auto;
+  height: clamp(340px, 32.1vw, 620px);
+  background-color: var(--bg-dark);
+  clip-path: polygon(0 0, 100% 0, 100% 94%, 0 100%);
+  content: "";
+}
+
+.home-page .hero-layout {
+  display: grid;
+  grid-template-columns: 32.8% minmax(0, 1fr);
+  align-items: start;
+}
+
+.hero-portrait {
+  position: relative;
+  z-index: 1;
+  grid-row: 1;
+  width: min(21.72vw, 417px);
+  max-width: 100%;
+}
+
+.hero-portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.home-page .hero-copy {
+  position: relative;
+  z-index: 2;
+  min-width: 0;
+  padding-top: 9.22vw;
+}
+
+.home-page .hero-badges {
+  gap: 10px;
+  margin-bottom: 3.5vw;
+}
+
+.home-page .badge {
+  font-size: 0.62rem;
+  padding: 4px 10px;
+}
+
+.home-page .hero-title {
+  max-width: 980px;
+  margin-bottom: 0;
+  color: #FFFFFF;
+  font-size: clamp(2.6rem, 3.125vw, 3.75rem);
+  line-height: 1.08;
+}
+
+.home-page .profile-info {
+  max-width: none;
+  margin-top: 10.5vw;
+}
+
+.home-page .profile-info strong {
+  margin-bottom: 6px;
+  font-size: clamp(0.95rem, 1.09375vw, 1.3125rem);
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.home-page .profile-info p {
+  color: var(--text-dark);
+  font-size: calc(clamp(0.95rem, 1.09375vw, 1.3125rem) + 2px);
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+
+.languages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+  margin-top: 2.2vw;
+  list-style: none;
+  font-size: clamp(0.6rem, 0.52vw, 0.625rem);
+}
+
+.languages li {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+
+}
+
+.languages li span {
+  font-size: 1.5625vw;
+  line-height: 1;
+  transform-origin: left center;
+}
+
+.home-page .metrics-section {
+  margin-top: 0;
+  padding: 48px 0 100px;
+}
+
+.home-page .metrics-grid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  padding-left: 256px;
+}
+
+.home-page .metric-number {
+  font-size: clamp(2.2rem, 3vw, 3rem);
+}
+
+.client-strip {
+  padding: 36px 0;
+  background-color: #FFFFFF;
+}
+
+.client-logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.client-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-dark);
+  font-family: var(--font-sans);
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.client-unicef {
+  gap: 5px;
+  color: #0086C9;
+  font-size: 1.35rem;
+}
+
+.client-unicef span {
+  font-size: 1.1rem;
+}
+
+.client-siemens {
+  display: grid;
+  color: #009999;
+  font-size: 1rem;
+}
+
+.client-siemens small {
+  color: #F58220;
+  font-size: 0.7rem;
+}
+
+.client-intelipost {
+  display: grid;
+  color: #004B3E;
+  font-size: 1.15rem;
+}
+
+.client-intelipost small {
+  font-size: 0.65rem;
+  font-weight: 400;
+  text-align: left;
+}
+
+.client-softplan {
+  color: #5454FF;
+  font-size: 1.5rem;
+}
+
+.client-sao-paulo {
+  display: block;
+  font-size: 0.55rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.client-sao-paulo strong {
+  font-size: 0.95rem;
+}
+
+.home-page .training-section {
+  padding: 100px 0 120px;
+  clip-path: none;
+}
+
+.home-page .training-section .split-header,
+.home-page .process-section .split-header {
+  grid-template-columns: 240px minmax(0, 1fr);
+  align-items: start;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.home-page .training-section .eyebrow {
+  margin-top: 8px;
+}
+
+.home-page .training-section .section-heading {
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  line-height: 1.08;
+}
+
+.home-page .training-desc {
+  max-width: 960px;
+  margin-top: 28px;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.home-page .photo-strip img {
+  max-height: 320px;
+}
+
+.home-page .process-section {
+  padding: 100px 0 110px;
+}
+
+.home-page .process-section .split-header {
+  margin-bottom: 42px;
+}
+
+.home-page .process-grid {
+  gap: 32px;
+}
+
+.home-page .process-card {
+  border-top: 1px solid rgba(20, 43, 53, 0.2);
+  padding-top: 22px;
+}
+
+.home-page .step-num {
+  margin-bottom: 18px;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.home-page .process-card h3 {
+  font-size: 1.35rem;
+  line-height: 1.25;
+}
+
+.home-page .process-card p {
+  font-size: 0.98rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 1199px) {
+  .languages {
+    gap: 16px;
+    margin-top: 24px;
+  }
+
+  .languages li span {
+    font-size: 1.6rem;
+    transform: scaleX(1.3);
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  .home-page .hero {
+    padding-bottom: 0;
+  }
+
+  .home-page .hero::before {
+    height: calc(148vw + 280px);
+  }
+
+  .home-page .hero-layout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-portrait {
+    width: min(32vw, 320px);
+  }
+
+  .home-page .hero-copy {
+    padding-top: 44px;
+  }
+
+  .home-page .hero-badges {
+    margin-bottom: 24px;
+  }
+
+  .home-page .hero-title {
+    font-size: clamp(2.3rem, 6vw, 3.4rem);
+  }
+
+  .home-page .profile-info {
+    margin: 40px -7.8125vw 0;
+    padding: 24px 7.8vw;
+    background-color: var(--bg-beige);
+  }
+}
+
+@media (max-width: 899px) {
+  .home-page .container {
+    width: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .home-page .navbar {
+    height: 72px;
+  }
+
+  .home-page .nav-links {
+    gap: 14px;
+  }
+
+  .home-page .nav-links a {
+    font-size: 0.78rem;
+  }
+
+  .home-page .hero::before {
+    height: calc(148vw + 280px);
+  }
+
+  .home-page .hero-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-portrait {
+    width: min(68%, 320px);
+  }
+
+  .home-page .hero-copy {
+    padding-top: 44px;
+  }
+
+  .home-page .hero-title {
+    font-size: clamp(2.3rem, 6vw, 3.4rem);
+  }
+
+  .home-page .profile-info {
+    max-width: none;
+    margin: 40px -20px 0;
+    padding: 24px 20px;
+    background-color: var(--bg-beige);
+  }
+
+  .home-page .metrics-section {
+    padding-top: 36px;
+  }
+
+  .home-page .metrics-grid {
+    padding-left: 0;
+  }
+
+  .client-logos {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px 36px;
+  }
+
+  .home-page .training-section .split-header,
+  .home-page .process-section .split-header {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .home-page .process-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .home-page .nav-links {
+    gap: 10px;
+  }
+
+  .home-page .nav-links a {
+    font-size: 0.68rem;
+  }
+
+  .home-page .nav-links .nav-cta {
+    max-width: 90px;
+  }
+
+  .home-page .hero::before {
+    height: calc(148vw + 280px);
+  }
+
+  .home-page .hero-title {
+    font-size: 2.25rem;
+  }
+
+  .home-page .metrics-grid {
+    gap: 16px 10px;
+  }
+
+  .home-page .metric-number {
+    font-size: 2rem;
+  }
+
+  .home-page .metric-label {
+    font-size: 0.62rem;
+  }
+
+  .home-page .training-section {
+    padding: 72px 0 84px;
+  }
+
+  .home-page .training-section .section-heading {
+    font-size: 2.35rem;
+  }
+
+  .home-page .process-section {
+    padding: 72px 0;
+  }
+}
