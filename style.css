@@ -188,7 +188,6 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
-  margin-bottom: 56px;
 }
 
 .section-heading {
@@ -244,7 +243,6 @@ body {
 .training-desc {
   color: rgba(255, 255, 255, 0.94);
   margin-top: 20px;
-  font-size: 1.5rem;
   font-weight: 300;
   max-width: 680px;
 }
@@ -284,7 +282,7 @@ body {
 /* CASES DE MERCADO */
 .cases-section {
   background-color: var(--bg-beige);
-  padding: 90px 0 110px;
+  padding: 120px 0 110px;
 }
 
 .case-card {
@@ -1204,13 +1202,14 @@ body.pdf-case-body .pdf-feature img[src$="agendamento.png"] {
 
 .home-page .metrics-section {
   margin-top: 0;
-  padding: 48px 0 100px;
+  padding: 120px 0 120px;
 }
 
 .home-page .metrics-grid {
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
   padding-left: 256px;
+  margin-top: 50px;
 }
 
 .home-page .metric-number {
@@ -1218,7 +1217,7 @@ body.pdf-case-body .pdf-feature img[src$="agendamento.png"] {
 }
 
 .client-strip {
-  padding: 36px 0;
+  padding: 0 0 120px;
   background-color: #FFFFFF;
 }
 
@@ -1230,70 +1229,16 @@ body.pdf-case-body .pdf-feature img[src$="agendamento.png"] {
 }
 
 .client-logo {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-dark);
-  font-family: var(--font-sans);
-  font-size: 1.2rem;
-  font-weight: 700;
-  line-height: 1;
-  text-align: center;
-  white-space: nowrap;
-}
-
-.client-unicef {
-  gap: 5px;
-  color: #0086C9;
-  font-size: 1.35rem;
-}
-
-.client-unicef span {
-  font-size: 1.1rem;
-}
-
-.client-siemens {
-  display: grid;
-  color: #009999;
-  font-size: 1rem;
-}
-
-.client-siemens small {
-  color: #F58220;
-  font-size: 0.7rem;
-}
-
-.client-intelipost {
-  display: grid;
-  color: #004B3E;
-  font-size: 1.15rem;
-}
-
-.client-intelipost small {
-  font-size: 0.65rem;
-  font-weight: 400;
-  text-align: left;
-}
-
-.client-softplan {
-  color: #5454FF;
-  font-size: 1.5rem;
-}
-
-.client-sao-paulo {
   display: block;
-  font-size: 0.55rem;
-  font-weight: 500;
-  line-height: 1.2;
-  text-align: left;
-}
-
-.client-sao-paulo strong {
-  font-size: 0.95rem;
+  max-width: 190px;
+  max-height: 56px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
 }
 
 .home-page .training-section {
-  padding: 100px 0 120px;
+  padding: 120px 0 120px;
   clip-path: none;
 }
 
@@ -1302,7 +1247,6 @@ body.pdf-case-body .pdf-feature img[src$="agendamento.png"] {
   grid-template-columns: 240px minmax(0, 1fr);
   align-items: start;
   gap: 24px;
-  margin-bottom: 48px;
 }
 
 .home-page .training-section .eyebrow {
@@ -1317,7 +1261,7 @@ body.pdf-case-body .pdf-feature img[src$="agendamento.png"] {
 .home-page .training-desc {
   max-width: 960px;
   margin-top: 28px;
-  font-size: 1.05rem;
+  font-size: 1.5rem;
   line-height: 1.5;
 }
 
@@ -1334,7 +1278,7 @@ body.pdf-case-body .pdf-feature img[src$="agendamento.png"] {
 }
 
 .home-page .process-grid {
-  gap: 32px;
+  gap: 80px;
 }
 
 .home-page .process-card {
@@ -1344,7 +1288,7 @@ body.pdf-case-body .pdf-feature img[src$="agendamento.png"] {
 
 .home-page .step-num {
   margin-bottom: 18px;
-  font-size: 0.8rem;
+  font-size: 3rem;
   font-weight: 400;
 }
 
@@ -1354,7 +1298,7 @@ body.pdf-case-body .pdf-feature img[src$="agendamento.png"] {
 }
 
 .home-page .process-card p {
-  font-size: 0.98rem;
+  font-size: 1.2rem;
   line-height: 1.45;
 }
 
