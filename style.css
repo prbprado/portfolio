@@ -140,6 +140,14 @@ body {
   max-width: 100%;
 }
 
+.hero-tagline {
+  font-size: 1.6rem;
+  line-height: 1.45;
+  color: #ffffff;
+  font-weight: 200;
+}
+
+
 .profile-info {
   flex: 1;
   min-width: 0;
@@ -329,8 +337,7 @@ body {
 
 .case-content h3 {
   font-family: var(--font-serif);
-  font-size: clamp(1.8rem, 3vw, 2.4rem);
-  margin-bottom: 14px;
+  font-size: 5rem;
 }
 
 .case-content p {
