@@ -399,6 +399,41 @@ body {
   color: var(--coral);
 }
 
+/* FAQ */
+.faq-section {
+  padding: 90px 0 100px;
+  background-color: var(--bg-light);
+  text-align: center;
+}
+
+.faq-list {
+  max-width: 760px;
+  margin: 36px auto 0;
+  border-top: 1px solid rgba(43, 53, 62, 0.14);
+  text-align: left;
+}
+
+.faq-list details {
+  border-bottom: 1px solid rgba(43, 53, 62, 0.14);
+}
+
+.faq-list summary {
+  cursor: pointer;
+  padding: 24px 32px 24px 0;
+  color: var(--text-dark);
+  font-size: 1.15rem;
+  font-weight: 600;
+  list-style-position: outside;
+}
+
+.faq-list details p {
+  max-width: 900px;
+  padding: 0 32px 24px 0;
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
 /* PÁGINA DE CASE */
 .case-hero {
   background-color: var(--bg-dark);
@@ -1127,13 +1162,14 @@ body.pdf-case-body .pdf-feature img[src$="agendamento.png"] {
 .home-page .hero-layout {
   display: grid;
   grid-template-columns: 32.8% minmax(0, 1fr);
-  align-items: start;
+  align-items: center;
 }
 
 .hero-portrait {
   position: relative;
   z-index: 1;
-  grid-row: 1;
+  grid-column: 1;
+  grid-row: 1 / span 2;
   width: min(21.72vw, 417px);
   max-width: 100%;
 }
@@ -1146,10 +1182,16 @@ body.pdf-case-body .pdf-feature img[src$="agendamento.png"] {
 }
 
 .home-page .hero-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-column: 2;
+  grid-row: 1;
+  align-self: stretch;
   position: relative;
   z-index: 2;
   min-width: 0;
-  padding-top: 9.22vw;
+  min-height: clamp(340px, 32.1vw, 620px);
 }
 
 .home-page .hero-badges {
@@ -1171,8 +1213,10 @@ body.pdf-case-body .pdf-feature img[src$="agendamento.png"] {
 }
 
 .home-page .profile-info {
+  grid-column: 2;
+  grid-row: 2;
   max-width: none;
-  margin-top: 10.5vw;
+  margin-top: clamp(24px, 2.5vw, 40px);
 }
 
 .home-page .profile-info strong {
@@ -1337,6 +1381,7 @@ body.pdf-case-body .pdf-feature img[src$="agendamento.png"] {
   .home-page .hero-layout {
     display: flex;
     flex-direction: column;
+    align-items: stretch;
   }
 
   .hero-portrait {
@@ -1344,6 +1389,8 @@ body.pdf-case-body .pdf-feature img[src$="agendamento.png"] {
   }
 
   .home-page .hero-copy {
+    display: block;
+    min-height: 0;
     padding-top: 44px;
   }
 
@@ -1387,14 +1434,26 @@ body.pdf-case-body .pdf-feature img[src$="agendamento.png"] {
 
   .home-page .hero-layout {
     grid-template-columns: 1fr;
+    align-items: stretch;
   }
 
   .hero-portrait {
+    grid-column: auto;
+    grid-row: auto;
     width: min(68%, 320px);
   }
 
   .home-page .hero-copy {
+    grid-column: auto;
+    grid-row: auto;
+    display: block;
+    min-height: 0;
     padding-top: 44px;
+  }
+
+  .home-page .profile-info {
+    grid-column: auto;
+    grid-row: auto;
   }
 
   .home-page .hero-title {
